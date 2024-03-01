@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Switch Expression</title>
+  </head>
+  <body>
+    <script>
+      // hanya bekerja pada kondisi ==
+      let grade = "C";
+      switch (grade) {
+        case "A":
+          document.writeln("Anda lulus dengan predikat baik");
+          break;
+        case "B":
+        case "C":
+          document.writeln("Anda lulus");
+          break;
+        case "D":
+          document.writeln("Anda tidak lulus");
+          break;
+        default:
+          document.writeln("Mungkin anda salah jurusan");
+          break;
+      }
+    </script>
+  </body>
+</html>

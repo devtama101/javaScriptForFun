@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Function Return Value</title>
+  </head>
+  <body>
+    <script>
+      function sayHello(firstName, lastName) {
+        const say = `<p>Hello! ${firstName} ${lastName}  </p>`;
+        return say;
+      }
+
+      const result = sayHello("Tama", "Topik");
+      document.writeln(result);
+
+      function getFinalScore(value) {
+        if (value > 90) {
+          return "A";
+        } else if (value > 80) {
+          return "B";
+        } else if (value > 70) {
+          return "C";
+        } else if (value > 60) {
+          return "D";
+        } else {
+          return "E";
+        }
+      }
+
+      const score = getFinalScore(80);
+      document.writeln(`<p>Nilai anda ${score}</p>`);
+
+      function isContains(array, searchValue) {
+        for (const element of array) {
+          if (element === searchValue) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      const array = [1, 1435, 893, 38, 99, 30, 9, 290, 3, "Tama", "Topik"];
+      const search = "Tama";
+      const found = isContains(array, search);
+      document.writeln(`<p>${found}</p>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Operator Ternary</title>
+  </head>
+  <body>
+    <script>
+      let grade = 9;
+      let ucapan;
+
+      if (grade >= 70) {
+        ucapan = "Selamat anda lulus";
+      } else {
+        ucapan = "Anda tidak lulus";
+      }
+      document.writeln(`<p>${ucapan}</p>`);
+
+      ucapan = grade >= 70 ? "Selamat anda lulus" : "Anda tidak lulus";
+      document.writeln(`<p>${ucapan}</p>`);
+    </script>
+  </body>
+</html>
