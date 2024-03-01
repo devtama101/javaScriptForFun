@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "Tama",
+      };
+      person.sayHello = function (name) {
+        alert(`Hello ${this.name} ${name}`);
+      };
+      person.sayHello("Topik");
+    </script>
+  </body>
+</html>
