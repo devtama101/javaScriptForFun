@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      {
+        //destructuring array
+        const names = ["Tama", "Topik", "Rahman", "Budiman", "Sudjatmiko"];
+        const [first, middle, last, ...others] = names;
+
+        console.info(first);
+        console.info(middle);
+        console.info(last);
+        console.info(others);
+      }
+      {
+        //destructuring object
+        const person = {
+          firstName: "Tama",
+          lastName: "Topik",
+          age: 24,
+          address: {
+            street: "Jl. Pahlawan No. 1",
+            city: "Tangerang",
+            country: "Indonesia",
+          },
+          hobby: "Ngoding",
+          channel: "Kehabisan Topik",
+        };
+
+        let { firstName, lastName, age, address, ...others } = person;
+
+        console.info(firstName);
+        console.info(lastName);
+        console.info(age);
+        console.info(`address: `, address);
+        console.info(`others: `, others);
+      }
+    </script>
+  </body>
+</html>
